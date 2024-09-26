@@ -1,0 +1,8 @@
+
+subnet-05dd3b87d42e400cf
+subnet-013c8b9f7e34c5e41
+
+aws_eks % aws eks create-cluster \
+  --name eksUser \
+  --role-arn arn:aws:iam::105387351673:role/ekstestRole \
+  --resources-vpc-config subnetIds=subnet-05dd3b87d42e400cf,subnet-072b3d8b3c73a98ea,securityGroupIds=sg-0e32dce9a06985b91
